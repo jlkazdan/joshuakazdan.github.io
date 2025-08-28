@@ -20,10 +20,29 @@
             padding: 0 20px;
         }
         
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0 20px 0;
+        }
+        
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
         h1 {
             font-size: 2.5em;
             font-weight: normal;
-            margin: 40px 0 20px 0;
+            margin: 0 0 20px 0;
             color: #000;
         }
         
@@ -114,9 +133,20 @@
                 padding: 0 10px;
             }
             
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+            
             h1 {
                 font-size: 2em;
-                margin: 20px 0 15px 0;
+                margin: 0 0 15px 0;
             }
             
             .links a {
@@ -128,17 +158,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Joshua Kazdan</h1>
+        <div class="header-content">
+            <img src="./IMG_0660.jpeg" alt="Joshua Kazdan" class="profile-photo">
+            <div class="header-text">
+                <h1>Joshua Kazdan</h1>
         
-        <p>I'm a fourth-year Machine Learning PhD student in the Stanford Statistics Department. I'm grateful to be advised by David Donoho and Sanmi Koyejo.</p>
+                <p>I'm a fourth-year Machine Learning PhD student in the Stanford Statistics Department. I'm grateful to be advised by David Donoho and Sanmi Koyejo.</p>
         
-        <p>I research scaling laws, synthetic data, and adversarial robustness for language models.</p>
+                <p>I research scaling laws, synthetic data, and adversarial robustness for language models.</p>
         
-        <div class="links">
-            <a href="mailto:jkazdan@stanford.edu">Email</a> /
-            <a href="https://scholar.google.com/citations?user=2qhIm78AAAAJ&hl=en" target="_blank">Google Scholar</a> /
-            <a href="https://www.linkedin.com/in/joshua-kazdan-16ba49201/" target="_blank">LinkedIn</a> /
-            <a href="https://x.com/JoshuaK92829" target="_blank">Twitter</a>
+                <div class="links">
+                    <a href="mailto:jkazdan@stanford.edu">Email</a> /
+                    <a href="https://scholar.google.com/citations?user=2qhIm78AAAAJ&hl=en" target="_blank">Google Scholar</a> /
+                    <a href="https://www.linkedin.com/in/joshua-kazdan-16ba49201/" target="_blank">LinkedIn</a> /
+                    <a href="https://x.com/JoshuaK92829" target="_blank">Twitter</a>
+                </div>
+            </div>
         </div>
         
         <h2>Research</h2>
